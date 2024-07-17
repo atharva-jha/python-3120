@@ -9,7 +9,7 @@ e_email=input("enter your email")
     print("valid")
   else:
     print("invalid")
-    fname="kausar"
+    fname="Atharva"
     fname-fname.lower()
     @=fname[0:4]
     DOB= input("DDMMYYYY")
