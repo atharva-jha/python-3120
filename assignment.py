@@ -43,3 +43,63 @@ print(fake.country())
 print(fake.latitude(), fake.longitude())
 
 print(fake.url())
+#code 6
+from textblob import TextBlob
+
+def Convert(string):
+
+li= list(string.split())
+
+return li
+
+str1 = input("Enter your word : ")
+
+words=Convert(str1)
+
+corrected_words = []
+
+for i in words:
+
+corrected_words.append(TextBlob(i))
+
+print("Wrong words:", words)
+
+print("Corrected Words are :")
+
+for i in corrected_words:
+
+print(i.correct(), end="")
+
+#clcoding.com
+#code7
+from rembg import remove from PIL import Image
+
+input_path = 'masai.jpg'
+
+output_path = 'masai.png'
+
+inp = Image.open(input_path)
+
+output = remove(inp)
+
+output.save(output_path)
+#code 8
+# pip install PyPDF2
+
+from PyPDF2 import PdfFileWriter, PdfFileReader
+
+writer = PdfFileWriter()
+
+file = 'test_file.pdf'
+
+reader = PdfFileReader(file)
+
+for page in range(reader.numPages): writer.addPage (reader.getPage(page))
+
+writer.encrypt('Password')
+
+with open(f'test_file.pdf', 'wb') as file:
+
+writer.write(file)
+
+print('PDF encrypted')
