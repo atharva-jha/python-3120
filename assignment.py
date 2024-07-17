@@ -13,3 +13,33 @@ from colorama import Fore print(Fore. RED + "hello world") print(Fore. BLUE + "h
 print(Fore. YELLOW + "CLCODING.COM")
 
 print(Fore. CYAN + "THANK YOU")
+#code 3
+import barcode from barcode import Code128
+
+def generate_barcode(data): code = Code128(data) code.save("barcode") print("Barcode generated.")
+
+data = "1234-5678-9012" generate_barcode(data)
+#code 4
+import barcode from barcode import Code128
+
+def generate_barcode(data): code = Code128(data) code.save("barcode") print("Barcode generated.")
+
+data = "1234-5678-9012" generate_barcode(data)
+#code 5
+from faker import Faker
+
+fake Faker()
+
+print(fake.name())
+
+print(fake.address())
+
+print(fake.text())
+
+print(fake.email())
+
+print(fake.country())
+
+print(fake.latitude(), fake.longitude())
+
+print(fake.url())
